@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.isc.taller.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.isc.taller.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.isc.taller.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_ListPersona"
+        android:name="com.isc.taller.ui.persona.ListPersona"
+        android:label="@string/menu_persona"
+        tools:layout="@layout/fragment_list_persona" >
+        <action
+            android:id="@+id/action_nav_ListPersona_to_nav_UpdatePersona"
+            app:destination="@id/nav_UpdatePersona" />
+        <action
+            android:id="@+id/action_nav_ListPersona_to_nav_Update2Persona"
+            app:destination="@id/nav_Update2Persona" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_UpdatePersona"
+        android:name="com.isc.taller.ui.persona.UpdatePersona"
+        android:label="@string/add_persona"
+        tools:layout="@layout/fragment_update_persona" >
+        <action
+            android:id="@+id/action_nav_UpdatePersona_to_nav_ListPersona"
+            app:destination="@id/nav_ListPersona" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_Update2Persona"
+        android:name="com.isc.taller.ui.persona.Update2Persona"
+        android:label="@string/update_persona"
+        tools:layout="@layout/fragment_update2_persona" >
+        <action
+            android:id="@+id/action_nav_Update2Persona_to_nav_ListPersona"
+            app:destination="@id/nav_ListPersona" />
+        <argument
+            android:name="personaActual"
+            app:argType="com.isc.taller.model.Persona" />
+    </fragment>
+</navigation>

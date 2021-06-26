@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Taller</string>
+    <string name="title_activity_principal">Principal</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Realtime DB</string>
+    <string name="sumDescription">Ingrese un número</string>
+    <string name="btSuma">Sumar</string>
+    <string name="tvActual">El resultado es</string>
+
+
+    <string name="menu_gallery">Storage</string>
+
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="tvArchivo">Nombre del archivo</string>
+    <string name="err_archivo">Debe indicar un nombre de archivo</string>
+    <string name="descarga">Descargado imagen...</string>
+    <string name="err_descarga">Error descargando imagen...</string>
+    <string name="err_ruta">Seleccione un archivo a subir</string>
+    <string name="cargando">Cargando imagen...</string>
+    <string name="subidaOK">Se cargó la imagen</string>
+    <string name="subidaError">Error subiendo imagen</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_persona">Personas</string>
+    <string name="etCedula">Cédula</string>
+    <string name="etNombre">Nombre</string>
+    <string name="etApellidos">Apellidos</string>
+    <string name="etEdad">Edad</string>
+    <string name="btAgregar">Agregar</string>
+    <string name="add_persona">Agregar Persona</string>
+    <string name="personaadd">Persona agregada</string>
+    <string name="personafail">Faltan datos</string>
+    <string name="update_persona">Actualizar Persona</string>
+    <string name="btModificar">Modifcar</string>
+    <string name="personaupdate">Persona actualizada</string>
+    <string name="menu_delete">Eliminar Persona</string>
+    <string name="delete_persona">"Elimina a "</string>
+    <string name="delete_persona_q">"¿Esta seguro de eliminar a "</string>
+    <string name="deleted_persona">Persona eliminada</string>
+</resources>
