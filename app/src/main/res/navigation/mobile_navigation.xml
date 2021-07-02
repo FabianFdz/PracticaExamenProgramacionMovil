@@ -23,36 +23,21 @@
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
     <fragment
-        android:id="@+id/nav_ListPersona"
-        android:name="com.isc.taller.ui.persona.ListPersona"
-        android:label="@string/menu_persona"
-        tools:layout="@layout/fragment_list_persona" >
+        android:id="@+id/nav_listAlumnosFragment"
+        android:name="com.isc.taller.ui.alumno.ListAlumnosFragment"
+        android:label="@string/listAlumnoFragment"
+        tools:layout="@layout/fragment_list_alumnos" >
         <action
-            android:id="@+id/action_nav_ListPersona_to_nav_UpdatePersona"
-            app:destination="@id/nav_UpdatePersona" />
-        <action
-            android:id="@+id/action_nav_ListPersona_to_nav_Update2Persona"
-            app:destination="@id/nav_Update2Persona" />
+            android:id="@+id/action_listAlumnosFragment_to_addPersonaFragment"
+            app:destination="@id/nav_addAlumnoFragment" />
     </fragment>
     <fragment
-        android:id="@+id/nav_UpdatePersona"
-        android:name="com.isc.taller.ui.persona.UpdatePersona"
-        android:label="@string/add_persona"
-        tools:layout="@layout/fragment_update_persona" >
+        android:id="@+id/nav_addAlumnoFragment"
+        android:name="com.isc.taller.ui.alumno.AddAlumnoFragment"
+        android:label="@string/addAlumnoFragment"
+        tools:layout="@layout/fragment_add_alumno" >
         <action
-            android:id="@+id/action_nav_UpdatePersona_to_nav_ListPersona"
-            app:destination="@id/nav_ListPersona" />
-    </fragment>
-    <fragment
-        android:id="@+id/nav_Update2Persona"
-        android:name="com.isc.taller.ui.persona.Update2Persona"
-        android:label="@string/update_persona"
-        tools:layout="@layout/fragment_update2_persona" >
-        <action
-            android:id="@+id/action_nav_Update2Persona_to_nav_ListPersona"
-            app:destination="@id/nav_ListPersona" />
-        <argument
-            android:name="personaActual"
-            app:argType="com.isc.taller.model.Persona" />
+            android:id="@+id/action_addPersonaFragment_to_listAlumnosFragment"
+            app:destination="@id/nav_listAlumnosFragment" />
     </fragment>
 </navigation>

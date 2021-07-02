@@ -12,15 +12,11 @@
     <string name="sumDescription">Ingrese un número</string>
     <string name="btSuma">Sumar</string>
     <string name="tvActual">El resultado es</string>
-
+    
     <string name="menu">Realtime DB</string>
-
-
     <string name="menu_gallery">Storage</string>
     <string name="salvarUserenStorage">usuario</string>
     <string name="userActual">El usuario actual es: </string>
-
-
 
     <string name="menu_slideshow">Slideshow</string>
     <string name="tvArchivo">Nombre del archivo</string>
@@ -49,4 +45,11 @@
     <string name="delete_persona">"Elimina a "</string>
     <string name="delete_persona_q">"¿Esta seguro de eliminar a "</string>
     <string name="deleted_persona">Persona eliminada</string>
+    <string name="tvCarnet">Carnet</string>
+    <string name="etCorreo">Correo Electronico</string>
+    <string name="menu_alumno">Alumnos</string>
+    <string name="alumnoadd">Alumno Agregado</string>
+    <string name="alumnodatos">Faltan datos</string>
+    <string name="listAlumnoFragment">Alumno</string>
+    <string name="addAlumnoFragment">Agregar Alumno</string>
 </resources>

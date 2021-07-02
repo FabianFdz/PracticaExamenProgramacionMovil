@@ -17,8 +17,8 @@
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_slideshow" />
         <item
-            android:id="@+id/nav_ListPersona"
+            android:id="@+id/nav_listAlumnosFragment"
             android:icon="@drawable/ic_menu_persona"
-            android:title="@string/menu_persona" />
+            android:title="@string/menu_alumno" />
     </group>
 </menu>
