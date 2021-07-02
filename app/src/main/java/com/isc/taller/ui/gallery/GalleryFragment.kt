@@ -59,18 +59,17 @@ class GalleryFragment : Fragment() {
         binding.btUploadFile.setOnClickListener { cargar() }
 
 
-        binding.salvarUserenStorage.setOnClickListener { usuario() }
+        binding.salvarUserenStorage.setOnClickListener { saveUsuario() }
 
         return root
     }
 
-    private fun usuario(){
-        val user = Firebase.auth.currentUser.toString()
+    private fun saveUsuario(){
+        val user = FirebaseAuth.getInstance().currentUser?.email.toString()
        // val user = FirebaseAuth.getInstance().currentUser.toString()
        // val user = Firebase.auth
         //val user = FirebaseStorage.getInstance().getReference(usuario().toString())
         userRef.setValue(user)
-
     }
 
     private fun cargar() {
