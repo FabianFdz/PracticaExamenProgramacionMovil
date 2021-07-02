@@ -13,8 +13,14 @@
     <string name="btSuma">Sumar</string>
     <string name="tvActual">El resultado es</string>
 
+    <string name="menu">Realtime DB</string>
+
 
     <string name="menu_gallery">Storage</string>
+    <string name="salvarUserenStorage">usuario</string>
+    <string name="userActual">El usuario actual es: </string>
+
+
 
     <string name="menu_slideshow">Slideshow</string>
     <string name="tvArchivo">Nombre del archivo</string>

@@ -14,7 +14,17 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.ktx.database
+import com.google.firebase.database.ktx.getValue
 import com.google.firebase.ktx.Firebase
+import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import com.google.firebase.storage.ktx.storage
 import com.isc.taller.R
@@ -30,6 +40,7 @@ class GalleryFragment : Fragment() {
 
     //Usamos una referencia hacia el Storage de Firebase
     private lateinit var referencia: StorageReference
+    private lateinit var userRef: DatabaseReference
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -39,12 +50,27 @@ class GalleryFragment : Fragment() {
         _binding = FragmentGalleryBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
+        userRef = Firebase.database.getReference("CurrentUser")
+
+
         mostrarImagen()
         binding.btDownloadFile.setOnClickListener { descargar() }
         binding.btSearchFile.setOnClickListener { buscar() }
         binding.btUploadFile.setOnClickListener { cargar() }
 
+
+        binding.salvarUserenStorage.setOnClickListener { usuario() }
+
         return root
+    }
+
+    private fun usuario(){
+        val user = Firebase.auth.currentUser.toString()
+       // val user = FirebaseAuth.getInstance().currentUser.toString()
+       // val user = Firebase.auth
+        //val user = FirebaseStorage.getInstance().getReference(usuario().toString())
+        userRef.setValue(user)
+
     }
 
     private fun cargar() {
